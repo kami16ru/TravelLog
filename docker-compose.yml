@@ -1,12 +1,12 @@
 version: "3"
 services:
     backend:
-        container_name: button_vanilla_server
+        container_name: travel_log_server
         build:
             context: ./server
             dockerfile: Dockerfile
-        image: button_vanilla/server
+        image: travel_log/server
         ports:
-            - "5000:5000"
+            - "1337:1337"
         volumes:
             - ./server:/usr/src/app
